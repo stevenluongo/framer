@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Input } from "./Input";
+import ParallaxText from "./ParallaxText";
 
 
 
@@ -40,6 +41,10 @@ function App() {
           viewport={{margin: '-300px', once: true}}
         >hellloooooooooooooooo</motion.h1>
       </div>
+      <section className="bg-[purple] h-[100vh]">
+      <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
+      <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
+    </section>
     </div>
   );
 }
